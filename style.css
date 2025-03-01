@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: jost;
+    src: url(./Media/jost-variable.ttf);
+}
+:root{
+    --primary-color: #0a3cce;
+    --second-primary-color: #1037c6;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+button{
+    position: relative;
+    padding: 10px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: jost;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+button:hover{
+    color: var(--primary-color);
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    position: absolute;
+    z-index: 2;
+}
+nav img{
+    width: 60px;
+}
+#page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page1-text{
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    width: 46%;
+}
+.page1-text h1{
+    color: white;
+    line-height: 7vw;
+    font-family: jost;
+    font-size: 6vw;
+    font-weight: 100;
+    margin-bottom: 1vw;
+}
+.page1-paragraph{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.page1-paragraph h4{
+    color: white;
+    font-family: jost;
+    width: 60%;
+    font-weight: 100;
+    font-size: 24px;
+}
+.page1-paragraph button{
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: all ease 0.3s;
+    border: none;
+}
+.page1-paragraph button:hover{
+    background-color: black;
+    color: white;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 0 8.6vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+}
+#page2 h4{
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+#page2 h1{
+    font-family: roboto;
+    font-weight: 300;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.329) ;
+    font-size: 3.8vw;
+}
+
+#page3 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+#page3 canvas {
+    display: block;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--second-primary-color);
+    padding: 0 8.6vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+}
+#page4 h4{
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+#page4 h1{
+    font-family: roboto;
+    font-weight: 300;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.329) ;
+    font-size: 3.8vw;
+}
+
+#page5 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+#page5 canvas {
+    display: block;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#0c34c4, #093dcd);
+    padding: 0 8.6vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+}
+#page6 h4{
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+#page6 h1{
+    font-family: roboto;
+    font-weight: 300;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.329) ;
+    font-size: 3.8vw;
+}
+
+#page7 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #093dcd;
+    position: relative;
+}
+#page7 canvas {
+    width: 100%;
+    height: 100%;
+}
+.page7-circle{
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    border: 1px solid white;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.page7-circle-inner{
+    width: 70%;
+    height: 70%;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#page8{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#page8 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page8-bottom{
+    bottom: 10%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page8-bottom h1{
+    font-family: jost;
+    margin-bottom: 1vw;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(255, 255, 255) ;
+    font-size: 6vw;
+}
+.page8-bottom button{
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: all ease 0.3s;
+    border: none;
+}
+.page8-bottom button:hover{
+    background-color: black;
+    color: white;
+}
+
+#page9{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    background-color: #093dcd;
+}
+.page9-left{
+    width: 36%;
+    display: flex;
+    position: relative;
+}
+.page9-left h1{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-family: jost;
+    font-size: 6vw;
+    font-weight: 100;
+    line-height: 6vw;
+    color: white;
+}
+.page9-right{
+    width: 64%;
+    position: relative;
+}
+.page9-right-inner{
+    height: 66%;
+    width: 86%;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    border-radius: 10px;
+    background-image: url(./Media/Page9\ Image.jpeg);
+    background-size: cover;
+}
+
+#page10{
+    width: 100%;
+    height: 100vh;
+    background-color: #093dcd;
+    display: flex;
+    justify-content: end;
+}
+.page10-right{
+    width: 64%;
+    color: white;
+}
+.page10-right h4{
+    font-family: jost;
+    font-size: 1.6vw;
+    width: 85%;
+    font-weight: 600;
+    padding-bottom: 1vw;
+}
+.page10-right p{
+    color: rgba(255, 255, 255, 0.8);
+    width: 87%;
+    font-family: jost;
+    font-size: 1.6vw;
+    padding-bottom: 4vw;
+    line-height: 2.4vw;
+}
+
+#page11{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    background-color: white;
+    padding: 10% 8%;
+}
+#page11 h1{
+    font-family: jost;
+    font-size: 6.6vw;
+    font-weight: 100;
+}
+.page11-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vw 0;
+}
+.left11{
+    height: 25vh;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 48%;
+}
+.left11 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right11{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 25vh;
+    width: 48%;
+    left: 48%;
+}
+.right11 h4{
+    font-family: jost;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.page11-inner h2{
+    font-family: jost;
+    font-size: 1.6vw;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.8);
+}
+.page11-inner .right11 button{
+    display: block;
+    width: fit-content;
+    border: 1px solid var(--second-primary-color);
+    color: var(--second-primary-color);
+}
+#page12{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-color: #0f0f17;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 10%;
+    justify-content: center;
+}
+#page12 h1{
+    font-family: jost;
+    color: white;
+    font-size: 6vw;
+    font-weight: 100;
+    width: 40%;
+    line-height: 1;
+    padding-bottom: 3vw;
+}
+#page12 button{
+    border: none;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+}
+#page12 button:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+#page13{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+#page13 .links{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #0f0f17;
+    color: white;
+    position: relative;
+}
+.links h1{
+    font-family: jost;
+    font-weight: 100;
+    font-size: 2.4vw;
+    position: relative;
+    z-index: 10;
+}
+.links i{
+    font-size: 2.4vw;
+    position: relative;
+    z-index: 10;
+}
+.page13-center{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.4s;
+}
+#page13 .links:hover .page13-center{
+    height: 100%;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: #0f0f17;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 80px 10%;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+.footer-links {
+    display: flex;
+    gap: 100px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.column a{
+    text-decoration: none;
+    color: white;
+    font-family: jost;
+    font-size: 1vw;
+    text-transform: uppercase;
+    text-align: left;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.newsletter p {
+    color: white;
+    font-size: 1.6vw;
+    font-family: Jost, sans-serif;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+    width: 400px; /* Adjust as needed */
+}
+.input-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1vw;
+    width: 100%;
+    padding: 5px 0;
+    color: white;
+}
+.input-container ::placeholder{
+    color: white;
+}
+.input-container i {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.input-container i:hover {
+    transform: translateX(5px);
+}
+.footer-text {
+    margin-top: 4vw;
+    color: white;
+    font-family: Jost, sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+    text-align: left;
+}
