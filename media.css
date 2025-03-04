@@ -1,0 +1,29 @@
+@media (max-width: 1366px){
+    .page1-text{
+        width: 50%;
+    }
+    .page1-paragraph h4{
+        width: 70%;
+    }
+}
+@media (max-width: 1024px){
+    .page1-text{
+        width: 56%;
+    }
+    .page1-paragraph{
+        justify-content: space-between;
+    }
+    .page1-paragraph h4{
+        width: 70%;
+        font-size: 2vw;
+    }
+    #page9{
+        height: 70vh;
+    }
+    #page11{
+        width: 100%;
+        position: relative;
+        background-color: white;
+        padding: 8% 8% 0% 8%;
+    }
+}
