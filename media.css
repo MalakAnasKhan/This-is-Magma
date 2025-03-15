@@ -24,6 +24,45 @@
         width: 100%;
         position: relative;
         background-color: white;
-        padding: 8% 8% 0% 8%;
+        padding: 8% 8% 1% 8%;
+    }
+    .column a{
+        font-size: 1.4vw;
+    }
+    .input-container input{
+        font-size: 1.4vw;
+    }
+    .footer-text{
+        font-size: 1.4vw;
+    }
+}
+@media (max-width: 1024px){
+    .page1-text{
+        width: 60%;
+    }
+    .page1-paragraph h4 {
+        width: 63%;
+        font-size: 1.9vw;
+    }
+    #page2 h4 {
+        font-size: 1.8vw;
+    }
+    #page4 h4 {
+        font-size: 1.8vw;
+    }
+    #page6 h4 {
+        font-size: 1.8vw;
+    }
+    .page10-right p{
+        font-size: 1.8vw;
+    }
+    .right11 h4{
+        font-size: 1.6vw;
+    }
+    .page11-inner h2{
+        font-size: 2.4vw;
+    }
+    .input-container{
+        width: 280px;
     }
 }
