@@ -325,6 +325,7 @@ nav img{
 
 #page10{
     width: 100%;
+    position: relative;
     min-height: 60vh;
     background-color: #093dcd;
     display: flex;

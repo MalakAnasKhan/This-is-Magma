@@ -36,7 +36,7 @@
         font-size: 1.4vw;
     }
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
     .page1-text{
         width: 60%;
     }
@@ -64,5 +64,134 @@
     }
     .input-container{
         width: 280px;
+    }
+}
+@media (max-width: 425px){
+    .page1-text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .page1-text h1{
+        font-size: 14vw;
+        line-height: 16vw;
+    }
+    .page1-paragraph {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .page1-paragraph h4{
+        width: 100%;
+        font-size: 4vw;
+    }
+    #page2 h4 {
+        font-size: 3.6vw;
+    }
+    #page2 h1{
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    #page4 h4 {
+        font-size: 3.6vw;
+    }
+    #page4 h1{
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    #page6 h4 {
+        font-size: 3.6vw;
+    }
+    #page6 h1{
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    #page9{
+        flex-direction: column;
+        height: 60vh;
+        padding: 5%;
+    }
+    .page9-left{
+        width: 100%;
+        height: 45%;
+    }
+    .page9-left h1{
+        left: 0%;
+        top: 15%;
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+    .page9-right {
+        width: 100%;
+        min-height: 55%; /* Ensure it has height */
+    }
+    .page9-right-inner{
+        height: 100%;
+        width: 100%;
+        top: 0%;
+    }
+    #page10{
+        padding: 5%;
+    }
+    .page10-right{
+        width: 100%;
+    }
+    .page10-right h4 {
+        font-size: 8vw;
+        width: 100%;
+        font-weight: 200;
+    }
+    .page10-right p{
+        font-size: 6vw;
+        width: 100%;
+        line-height: 8vw;
+        color: rgba(255, 255, 255, 0.712);
+        padding-bottom: 10vw;
+    }
+    .page11-inner{
+        flex-direction: column;
+    }
+    .left11{
+        width: 100%;
+    } 
+    .right11{
+        width: 100%;
+    } 
+    .right11 h4 {
+        font-size: 4.4vw;
+    }
+    .page11-inner h2 {
+        font-size: 5.6vw;
+    }
+    .page11-inner:nth-child(5) .left11 {
+        display: none;
+    }
+    #page12 h1 {
+        font-size: 14vw;
+        width: 100%;
+        padding-bottom: 10vw;
+    }
+    .links h1 {
+        font-size: 6.4vw;
+    }
+    .links i {
+        font-size: 6.4vw;
+    }
+    .column a {
+        font-size: 3.4vw;
+    }
+    .footer-content {
+        gap: 44px;
+    }
+    .newsletter p {
+        font-size: 5.6vw;
+    }
+    .input-container input {
+        font-size: 3.4vw;
+    }
+    .footer-text {
+        font-size: 3.4vw;
+        padding-top: 5vw;
     }
 }
